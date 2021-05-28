@@ -1,0 +1,16 @@
+{
+    "translations": {
+        "Not permitted": "허용되지 않습니다",
+        "Folder not found": "폴더를 찾을 수 없습니다",
+        "Insufficient permissions": "권한이 부족합니다",
+        "Can't create file": "파일을 생성할 수 없습니다",
+        "Hancom Office Online app is not configured. Please contact your administrator": "Hancom Office Online이 설정되지 않았습니다. 관리자에게 문의하십시오",
+        "Please change the '<address>' for the server address in the below line.": "아래 <address> 칸에 서버의 주소를 입력하십시오.",
+        "Real-time collaborative editing in your web browser": "웹브라우저에서 실시간 공동 편집 기능을 사용하세요",
+        "To enable preview provide DocsConverter server url address.": "문서 미리보기를 사용하시려면, 아래에 DocsConverter의 URL을 입력하세요.",
+        "Use your own server": "본인의 서버를 사용하세요",
+        "Use a demo server": "데모용 서버를 이용하세요.",
+        "Save": "저장"
+    },
+    "pluralForm" :"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"
+}

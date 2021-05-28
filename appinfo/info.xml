@@ -1,0 +1,39 @@
+﻿<?xml version="1.0"?>
+<info>
+    <id>hancomoffice</id>
+    <name>Hancom Office Connector</name>
+    <summary>Enable seamless integration with Hancom Office Online and Hancom DocsConverter</summary>
+    <description>Create, edit and view Microsoft Office files in modern web browsers</description>
+    <licence>AGPL</licence>
+    <author mail="global-support@hancom.com" homepage="https://office.hancom.com/">Hancom, Inc.</author>
+    <version>0.0.9</version>
+    <namespace>HancomOffice</namespace>
+    <types>
+        <filesystem/>
+    </types>
+    <documentation>
+        <admin>https://admin/url</admin>
+        <developer>https://developer/url</developer>
+        <user>https://user/url</user>
+    </documentation>
+    <category>files</category>
+    <category>integration</category>
+    <category>office</category>
+    <category>tools</category>
+    <website>https://office.hancom.com</website>
+    <discussion>https://office.hancom.com</discussion>
+    <bugs>https://github.com/organization/repository/issues</bugs>
+    <repository type="git">https://github.com/organization/repository.git</repository>
+    <screenshot small-thumbnail="https://raw.githubusercontent.com/organization/repository/master/screenshots/main_small.png">https://raw.githubusercontent.com/organization/repository/master/screenshots/main.png</screenshot>
+    <screenshot>https://raw.githubusercontent.com/organization/repository/master/screenshots/settings.png</screenshot>
+    <dependencies>
+        <nextcloud min-version="15" max-version="20"/>
+    </dependencies>
+    <settings>
+        <admin>OCA\HancomOffice\Settings\Admin</admin>
+        <admin-section>OCA\HancomOffice\Settings\Section</admin-section>
+    </settings>
+    <background-jobs>
+        <job>OCA\HancomOffice\BackgroundJob\CleanFileLocks</job>
+    </background-jobs>
+</info>

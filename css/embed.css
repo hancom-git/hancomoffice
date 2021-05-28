@@ -1,0 +1,22 @@
+/**
+ *
+ * (c) Copyright Hancom Inc
+ *
+ */
+
+#content.app-hancomoffice {
+    height: calc(100% - 50px);
+}
+
+#iframeEditor {
+    width: 100%;
+    height: 100%;
+}
+
+#body-public #content.app-public {
+    height: 100%;
+}
+
+#body-public footer {
+    display: none;
+}

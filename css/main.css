@@ -1,0 +1,72 @@
+/**
+ *
+ * (c) Copyright Hancom Inc
+ *
+ */
+
+/* icons from Pixel perfect https://icon54.com/ */
+.icon-hancomoffice-new-docx {
+    background-image: url("../img/docx.svg");
+}
+.icon-hancomoffice-new-xlsx {
+    background-image: url("../img/xlsx.svg");
+}
+.icon-hancomoffice-new-pptx {
+    background-image: url("../img/pptx.svg");
+}
+.icon-hancomoffice-open,
+.icon-hancomoffice-convert {
+    background-image: url("../img/app-dark.svg");
+}
+
+#hancomofficePreview {
+    background-color: #fff;
+    width: 100%;
+    height: calc(100vh - 50px);
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 110;
+}
+
+#hancomIframe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 500;
+}
+
+#hancomofficePreview.hidden-visually {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#header-hancom {
+    justify-content: flex-end;
+    flex-shrink: 1;
+}
+
+#header-hancom > div:hover > .menutoggle {
+    opacity: 1;
+}
+
+/* [data-mime="application/haansofthwp"] .filename .thumbnail,
+[data-mime="application/haansofthwpx"] .filename .thumbnail,
+[data-mime="application/haansoftowpml"] .filename .thumbnail {
+    background-image: url("../img/docx.svg") !important;
+}
+
+[data-mime="application/haansoftshow"] .filename .thumbnail {
+    background-image: url("../img/pptx.svg") !important;
+}
+
+[data-mime="application/haansoftcell"] .filename .thumbnail {
+    background-image: url("../img/xlsx.svg") !important;
+} */

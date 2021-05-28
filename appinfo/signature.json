@@ -1,0 +1,7 @@
+{
+    "hashes": {
+        "path\/filename.php": "hash"
+    },
+    "signature": "hash",
+    "certificate": "-----BEGIN CERTIFICATE-----\r\ncode\r\n-----END CERTIFICATE-----"
+}

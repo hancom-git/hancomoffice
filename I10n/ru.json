@@ -1,0 +1,16 @@
+{
+    "translations": {
+        "Not permitted": "Нет доступа",
+        "Folder not found": "Папка не найдена",
+        "Insufficient permissions": "Доступ ограничен",
+        "Can't create file": "При создании файла произошла ошибка",
+        "Hancom Office Online app is not configured. Please contact admin": "Hancom Office Online не сконфигурирован. Обратитесь к администратору",
+        "Please change the '<address>' for the server address in the below line.": "Замените ниже <address> на адрес вашего сервера.",
+        "Real-time collaborative editing in your web browser": "Совместное редактирование файлов в вашем браузере в реальном времени",
+        "To enable preview provide DocsConverter server url address.": "Для просмотра файлов укажите адрес DocsConverter.",
+        "Use your own server": "Использовать свой сервер",
+        "Use a demo server": "Использовать демо сервер",
+        "Save": "Сохранить"
+    },
+    "pluralForm" :"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"
+}

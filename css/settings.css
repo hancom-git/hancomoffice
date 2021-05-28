@@ -1,0 +1,39 @@
+/**
+ *
+ * (c) Copyright Hancom Inc
+ *
+ */
+
+.hancomoffice-header {
+    display: inline-block;
+    margin-top: 16px;
+}
+.section-hancomoffice input {
+    display: block;
+    width: 250px;
+}
+.hancomoffice-hide {
+    display: none;
+}
+
+#hancomofficeAddrSave {
+    float: left;
+}
+
+.option-inline {
+    margin: 10px 0 10px 25px;
+}
+
+.section-hancomoffice hr {
+    border: none;
+    border-top: 1px solid #d4d4d4;
+    margin: 24px 0;
+}
+
+.section-hancomoffice button {
+    margin-top: 24px;
+}
+
+.section-hancomoffice .settings-hint {
+    margin: 12px 0;
+}
