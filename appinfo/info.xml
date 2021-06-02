@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0"?>
-<info>
+<info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
     <id>hancomoffice</id>
     <name>Hancom Office Connector</name>
     <summary>Enable seamless integration with Hancom Office Online and Hancom DocsConverter</summary>
@@ -14,7 +14,7 @@
     <documentation>
         <admin>https://admin/url</admin>
         <developer>https://developer/url</developer>
-        <user>https://user/url</user>
+        <user>https://global-support.hancom.com/hc/en-us</user>
     </documentation>
     <category>files</category>
     <category>integration</category>
