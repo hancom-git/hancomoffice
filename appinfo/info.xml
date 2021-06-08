@@ -4,7 +4,7 @@
     <name lang="en">Hancom Office Connector</name>
     <summary lang="en">Enable seamless integration with Hancom Office Online and Hancom DocsConverter</summary>
     
-    <description>The Hancom Office Online connector enables you to create, view, edit, and collaborate on MS Office compatible documents, spreadsheets and presentations within Nextcloud.  Multiple users can work easily together to create or co-edit documents in real-time.   </description>
+    <description lang="en">The Hancom Office Online connector enables you to create, view, edit, and collaborate on MS Office compatible documents, spreadsheets and presentations within Nextcloud.  Multiple users can work easily together to create or co-edit documents in real-time.   </description>
     <licence>AGPL</licence>
     <author mail="global-support@hancom.com" homepage="https://office.hancom.com/">Hancom, Inc.</author>
     <version>0.0.9</version>
