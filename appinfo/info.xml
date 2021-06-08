@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0"?>
 <info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
     <id>hancomoffice</id>
-    <name>Hancom Office Connector</name>
-    <summary>Enable seamless integration with Hancom Office Online and Hancom DocsConverter</summary>
-    <description>Create, edit and view Microsoft Office files in modern web browsers</description>
+    <name lang="en">Hancom Office Connector</name>
+    <summary lang="en">Enable seamless integration with Hancom Office Online and Hancom DocsConverter</summary>
+    
+    <description>The Hancom Office Online connector enables you to create, view, edit, and collaborate on MS Office compatible documents, spreadsheets and presentations within Nextcloud.  Multiple users can work easily together to create or co-edit documents in real-time.   </description>
     <licence>AGPL</licence>
     <author mail="global-support@hancom.com" homepage="https://office.hancom.com/">Hancom, Inc.</author>
     <version>0.0.9</version>
@@ -12,9 +13,9 @@
         <filesystem/>
     </types>
     <documentation>
-        <admin>https://admin/url</admin>
-        <developer>https://developer/url</developer>
-        <user>https://global-support.hancom.com/hc/en-us</user>
+        <admin>https://github.com/hancom-git/hancomoffice#readme</admin>
+        <developer>https://office.hancom.com</developer>
+        <user>https://github.com/hancom-git/hancomoffice#readme</user>
     </documentation>
     <category>files</category>
     <category>integration</category>
@@ -22,10 +23,14 @@
     <category>tools</category>
     <website>https://office.hancom.com</website>
     <discussion>https://office.hancom.com</discussion>
-    <bugs>https://github.com/organization/repository/issues</bugs>
-    <repository type="git">https://github.com/organization/repository.git</repository>
-    <screenshot small-thumbnail="https://raw.githubusercontent.com/organization/repository/master/screenshots/main_small.png">https://raw.githubusercontent.com/organization/repository/master/screenshots/main.png</screenshot>
-    <screenshot>https://raw.githubusercontent.com/organization/repository/master/screenshots/settings.png</screenshot>
+    <bugs>https://github.com/hancom-git/hancomoffice/issues</bugs>
+    <repository type="git">https://github.com/hancom-git/hancomoffice.git</repository>
+    <screenshot small-thumbnail="https://github.com/hancom-git/hancomoffice/blob/master/screenshots/main_small.png">
+                                        https://github.com/hancom-git/hancomoffice/blob/master/screenshots/main.png</screenshot>
+     <screenshot>https://github.com/hancom-git/hancomoffice/blob/master/screenshots/main_2.png</screenshot>
+      <screenshot>https://github.com/hancom-git/hancomoffice/blob/master/screenshots/main_3.png</screenshot>
+       <screenshot>https://github.com/hancom-git/hancomoffice/blob/master/screenshots/main_4.png</screenshot>
+    <screenshot>https://github.com/hancom-git/hancomoffice/blob/master/screenshots/settings.png</screenshot>
     <dependencies>
         <nextcloud min-version="15" max-version="20"/>
     </dependencies>
