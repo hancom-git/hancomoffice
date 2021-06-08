@@ -25,12 +25,12 @@
     <discussion>https://office.hancom.com</discussion>
     <bugs>https://github.com/hancom-git/hancomoffice/issues</bugs>
     <repository type="git">https://github.com/hancom-git/hancomoffice.git</repository>
-    <screenshot small-thumbnail="https://github.com/hancom-git/hancomoffice/blob/master/screenshots/main_small.png">
-                                        https://github.com/hancom-git/hancomoffice/blob/master/screenshots/main.png</screenshot>
-     <screenshot>https://github.com/hancom-git/hancomoffice/blob/master/screenshots/main_2.png</screenshot>
-      <screenshot>https://github.com/hancom-git/hancomoffice/blob/master/screenshots/main_3.png</screenshot>
-       <screenshot>https://github.com/hancom-git/hancomoffice/blob/master/screenshots/main_4.png</screenshot>
-    <screenshot>https://github.com/hancom-git/hancomoffice/blob/master/screenshots/settings.png</screenshot>
+    <screenshot small-thumbnail="https://hancom-nextcloud-appstore.s3.ap-northeast-2.amazonaws.com/appstore-screenshots/main_small.png">
+                                      https://hancom-nextcloud-appstore.s3.ap-northeast-2.amazonaws.com/appstore-screenshots/main.png</screenshot>
+     <screenshot>https://hancom-nextcloud-appstore.s3.ap-northeast-2.amazonaws.com/appstore-screenshots/main_2.png</screenshot>
+      <screenshot>https://hancom-nextcloud-appstore.s3.ap-northeast-2.amazonaws.com/appstore-screenshots/main_3.png</screenshot>
+       <screenshot>https://hancom-nextcloud-appstore.s3.ap-northeast-2.amazonaws.com/appstore-screenshots/main_4.png</screenshot>
+    <screenshot>https://hancom-nextcloud-appstore.s3.ap-northeast-2.amazonaws.com/appstore-screenshots/settings.png</screenshot>
     <dependencies>
         <nextcloud min-version="15" max-version="20"/>
     </dependencies>
