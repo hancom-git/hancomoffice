@@ -30,7 +30,6 @@
      <screenshot>https://hancom-nextcloud-appstore.s3.ap-northeast-2.amazonaws.com/appstore-screenshots/main_2.png</screenshot>
       <screenshot>https://hancom-nextcloud-appstore.s3.ap-northeast-2.amazonaws.com/appstore-screenshots/main_3.png</screenshot>
        <screenshot>https://hancom-nextcloud-appstore.s3.ap-northeast-2.amazonaws.com/appstore-screenshots/main_4.png</screenshot>
-    <screenshot>https://hancom-nextcloud-appstore.s3.ap-northeast-2.amazonaws.com/appstore-screenshots/settings.png</screenshot>
     <dependencies>
         <nextcloud min-version="15" max-version="20"/>
     </dependencies>
