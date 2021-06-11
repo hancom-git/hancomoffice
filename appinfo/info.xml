@@ -6,7 +6,7 @@
     
     <description lang="en">The Hancom Office Online connector enables you to create, view, edit, and collaborate on MS Office compatible documents, spreadsheets and presentations within Nextcloud.  Multiple users can work easily together to create or co-edit documents in real-time.   </description>
     <licence>AGPL</licence>
-    <author mail="global-support@hancom.com" homepage="https://office.hancom.com/">Hancom, Inc.</author>
+    <author mail="global-support@hancom.com" homepage="https://office.hancom.com/connector/">Hancom, Inc.</author>
     <version>0.0.9</version>
     <namespace>HancomOffice</namespace>
     <types>
@@ -14,15 +14,15 @@
     </types>
     <documentation>
         <admin>https://github.com/hancom-git/hancomoffice#readme</admin>
-        <developer>https://office.hancom.com</developer>
+        <developer>https://office.hancom.com/</developer>
         <user>https://github.com/hancom-git/hancomoffice#readme</user>
     </documentation>
     <category>files</category>
     <category>integration</category>
     <category>office</category>
     <category>tools</category>
-    <website>https://office.hancom.com</website>
-    <discussion>https://office.hancom.com</discussion>
+    <website>https://office.hancom.com/connector/</website>
+    <discussion>https://office.hancom.com/connector/</discussion>
     <bugs>https://github.com/hancom-git/hancomoffice/issues</bugs>
     <repository type="git">https://github.com/hancom-git/hancomoffice.git</repository>
     <screenshot small-thumbnail="https://hancom-nextcloud-appstore.s3.ap-northeast-2.amazonaws.com/appstore-screenshots/main_small.png">
