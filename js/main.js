@@ -19,33 +19,37 @@
         return extension;
     }
 
+    function updateSettingsFromResponse(response) {
+        if (!SETTINGS.WEBOFFICE_HOST) {
+            SETTINGS.WEBOFFICE_HOST = response.webofficeHost;
+            SETTINGS.DOCSCONVERTER_HOST = response.docsconverterHost;
+            SETTINGS.INSTANCE_ID = response.instanceid;
+            SETTINGS.FORMATS = response.formats;
+            $.each(response.formats || {}, function(ext, config) {
+                var app = SETTINGS.APP_BY_EXT[config.type];
+                if (!app) {
+                    app = SETTINGS.APP_BY_EXT[config.type] = [];
+                }
+                app.push(ext);
+            });
+
+            SETTINGS.APPS = response.apps || {};
+        }
+    }
+
+    var settingsRequest = null;
     OCA.HancomOffice.getSettings = function(callback) {
         if (SETTINGS.FORMATS) {
             callback();
         } else {
-            $.get(
-                OC.generateUrl("apps/" + OCA.HancomOffice.AppName + "/ajax/settings"),
-                function onSuccess(response) {
-                    if (!SETTINGS.WEBOFFICE_HOST) {
-                        SETTINGS.WEBOFFICE_HOST = response.webofficeHost;
-                        SETTINGS.DOCSCONVERTER_HOST = response.docsconverterHost;
-                        SETTINGS.INSTANCE_ID = response.instanceid;
-                        SETTINGS.FORMATS = response.formats;
-                        $.each(response.formats || {}, function(ext, config) {
-                            var app = SETTINGS.APP_BY_EXT[config.type];
-                            if (!app) {
-                                app = SETTINGS.APP_BY_EXT[config.type] = [];
-                            }
-                            app.push(ext);
-                        });
-
-                        SETTINGS.APPS = response.apps || {};
-                        // console.log(SETTINGS);
-                    }
-
-                    callback();
-                }
-            );
+            var request = settingsRequest || $.get(OC.generateUrl("apps/" + OCA.HancomOffice.AppName + "/ajax/settings"));
+            settingsRequest = request;
+            request.done(function(response) {
+                updateSettingsFromResponse(response);
+                callback();
+            }).fail(function() {
+                settingsRequest = null;
+            });
         }
     };
 
@@ -233,7 +237,6 @@
 
             OCA.HancomOffice.getSettings(function() {
                 $.each(OCA.HancomOffice.SETTINGS.FORMATS, function(_ext, config) {
-                    // console.log(config);
                     fileList.fileActions.registerAction({
                         name: "hancomofficeOpen",
                         displayName: t(OCA.HancomOffice.AppName, "Edit in Hancom Office"),
@@ -345,35 +348,42 @@
 
     function initViewer() {
         if (OCA.Viewer) {
-            var handlers = OCA.Viewer.availableHandlers;
-            var isExist = handlers.filter(function(handler) {
-                return handler.id === OCA.HancomOffice.AppName;
-            }).length > 0;
-            if (!isExist) {
-                OCA.HancomOffice.getSettings(function() {
-                    if (SETTINGS.DOCSCONVERTER_HOST) {
-                        var mimes = $.map(SETTINGS.FORMATS, function(config) {
-                            return config.mime;
-                        });
-                        OCA.Viewer.registerHandler({
-                            id: OCA.HancomOffice.AppName,
-                            group: null,
-                            mimes: mimes,
-                            component: Viewer
-                        })
-                    }
-                });
-            }
+            OCA.HancomOffice.getSettings(function() {
+                var handlers = OCA.Viewer.availableHandlers;
+                var isExist = handlers.filter(function(handler) {
+                    return handler.id === OCA.HancomOffice.AppName;
+                }).length > 0;
+                if (SETTINGS.DOCSCONVERTER_HOST && !isExist) {
+                    var mimes = $.map(SETTINGS.FORMATS, function(config) {
+                        return config.mime;
+                    });
+                    OCA.Viewer.registerHandler({
+                        id: OCA.HancomOffice.AppName,
+                        group: null,
+                        mimes: mimes,
+                        component: Viewer
+                    })
+                }
+            });
         }
     }
 
-    var initPage = function() {
-        OC.Plugins.register("OCA.Files.FileList", OCA.HancomOffice.FileList);
-        OC.Plugins.register("OCA.Files.NewFileMenu", OCA.HancomOffice.NewFileMenu);
+    var editorInitiated = false;
+    function initEditor() {
+        if (OC && !editorInitiated) {
+            OC.Plugins.register("OCA.Files.FileList", OCA.HancomOffice.FileList);
+            OC.Plugins.register("OCA.Files.NewFileMenu", OCA.HancomOffice.NewFileMenu);
+            editorInitiated = true;
+        }
+    }
 
+    function init() {
+        initEditor();
         initViewer();
-    };
+    }
 
-    $(document).ready(initPage);
+    init();
+
+    $(document).ready(init);
 
 })(OCA);
