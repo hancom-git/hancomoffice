@@ -7,7 +7,7 @@
     <description lang="en">The Hancom Office Online connector enables you to create, view, edit, and collaborate on MS Office compatible documents, spreadsheets and presentations within Nextcloud.  Multiple users can work easily together to create or co-edit documents in real-time.   </description>
     <licence>AGPL</licence>
     <author mail="global-support@hancom.com" homepage="https://office.hancom.com/connector/">Hancom, Inc.</author>
-    <version>0.0.9</version>
+    <version>1.0</version>
     <namespace>HancomOffice</namespace>
     <types>
         <filesystem/>
@@ -31,7 +31,7 @@
       <screenshot>https://hancom-nextcloud-appstore.s3.ap-northeast-2.amazonaws.com/appstore-screenshots/main_3.png</screenshot>
        <screenshot>https://hancom-nextcloud-appstore.s3.ap-northeast-2.amazonaws.com/appstore-screenshots/main_4.png</screenshot>
     <dependencies>
-        <nextcloud min-version="15" max-version="21"/>
+        <nextcloud min-version="15" max-version="22"/>
     </dependencies>
     <settings>
         <admin>OCA\HancomOffice\Settings\Admin</admin>
